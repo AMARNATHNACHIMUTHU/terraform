@@ -6,3 +6,7 @@ tags{
   Name = "terraform-aws-vpc-example-two"
 }
 }
+resource "aws_subnet" "subnet1"{
+cidr_block =""
+vpc_id ="${aws_vpc.environment-example-two.id}"
+}
