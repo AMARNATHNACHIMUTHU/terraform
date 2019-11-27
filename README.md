@@ -15,6 +15,6 @@ $ terraform apply out.terraform                   # apply terraform plan using o
 $ terraform show                                  # show current state
 
 ### Reference Documentation
-Download URL: https://www.terraform.io/downloads.html
-AWS Resources: https://www.terraform.io/docs/providers/aws/
-List of providers: https://www.terraform.io/docs/providers/index.html
+# Download URL: https://www.terraform.io/downloads.html
+# AWS Resources: https://www.terraform.io/docs/providers/aws/
+# List of providers: https://www.terraform.io/docs/providers/index.html
