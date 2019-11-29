@@ -14,6 +14,8 @@ $ terraform apply out.terraform                   # apply terraform plan using o
 
 $ terraform show                                  # show current state
 
+$ terraform destory                               # delete infastruture from cloud provider
+
 # Reference Documentation
 ### Download URL: https://www.terraform.io/downloads.html
 ### AWS Resources: https://www.terraform.io/docs/providers/aws/
