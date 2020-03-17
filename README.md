@@ -4,6 +4,7 @@ Learning how to create infrastructure as code
 Created a connection to aws in the connections.tf file and a VPC in the resources file.
 ```
 ### Useful Commands
+
 $ terraform init                                  # initialise a terraform plan
 
 $ terraform plan                                  # informs you of the resources that will be created
@@ -19,6 +20,7 @@ $ terraform show                                  # show current state
 $ terraform destory                               # delete infastruture from cloud provider
 
 # Reference Documentation
+
 ### Download URL: https://www.terraform.io/downloads.html
 ### AWS Resources: https://www.terraform.io/docs/providers/aws/
 ### List of providers: https://www.terraform.io/docs/providers/index.html
