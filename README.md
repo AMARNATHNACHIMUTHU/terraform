@@ -19,6 +19,8 @@ $ terraform show                                  # show current state
 
 $ terraform destory                               # delete infastruture from cloud provider
 
+$ terraform import                                # used to copy a file from source to cloud
+
 # Reference Documentation
 
 ### Download URL: https://www.terraform.io/downloads.html
