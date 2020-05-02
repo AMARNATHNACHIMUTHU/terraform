@@ -1,6 +1,6 @@
-## Terraform Infrastructure for AWS
+# Terraform Infrastructure for AWS
 
-Order of Provision
+### Order of Provision
 1. Navigate to S3Bucket to create your S3 bucket.
 Command are:
 
@@ -21,7 +21,7 @@ Command are:
 
 3. Navigate back to Infrastructure to build.
 
-Commands
+### Commands
 
 ```terraform init```
 
