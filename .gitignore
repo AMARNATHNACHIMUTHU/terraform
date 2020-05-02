@@ -8,3 +8,10 @@
 # .tfvars files
 *.tfvars
 .terraform/
+
+# keys
+*.pem
+*.pub
+
+#Intellij project
+*.idea
