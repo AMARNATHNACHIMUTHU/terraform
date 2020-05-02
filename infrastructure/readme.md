@@ -1,4 +1,4 @@
-##Terraform Infrastructure for AWS
+## Terraform Infrastructure for AWS
 
 Order of Provision
 1. Navigate to S3Bucket to create your S3 bucket.
@@ -10,6 +10,7 @@ Command are:
 ```terraform plan```
 
 ```terraform apply```
+
 2. Navigate to StateFileS3Backend to create your Backend to store the state.
 
 ```terraform init```
@@ -17,6 +18,7 @@ Command are:
 ```terraform plan```
 
 ```terraform apply```
+
 3. Navigate back to Infrastructure to build.
 
 Commands
