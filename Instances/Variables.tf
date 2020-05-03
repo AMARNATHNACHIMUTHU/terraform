@@ -1,45 +1,14 @@
-terraform {
-  backend "s3" {
-    bucket = "viv-terraform-remote-state"
-    key    = "instances/terraform.tfstate"
-    region = "${var.region}"
-  }
-}
+
 
 variable "region" {
   default         = "eu-west-1"
   description     = "This is the default region for all my infrastructure."
 }
 
-variable "vpc_cidr" {
-  default         = "10.0.0.0/16"
-  description     = "My dev VPC"
+variable "remote_state_bucket" {
+  description = "Bucket name for infrastruture layer"
 }
 
-variable "public-subnet-1-cidr" {
-  default         = "10.0.0.0/16"
-  description     = "My dev VPC Subnet Public 1 CIDR"
-}
-variable "public-subnet-2-cidr" {
-  default         = "10.0.0.0/16"
-  description     = "My dev VPC Subnet Public 2 CIDR"
-}
-
-variable "public-subnet-3-cidr" {
-  default         = "10.0.0.0/16"
-  description     = "My dev VPC Subnet Public 3 CIDR"
-}
-
-variable "private-subnet-1-cidr" {
-  default         = "10.0.0.0/16"
-  description     = "My dev VPC Subnet Private 1 CIDR"
-}
-variable "private-subnet-2-cidr" {
-  default         = "10.0.0.0/16"
-  description     = "My dev VPC Subnet Private 2 CIDR"
-}
-
-variable "private-subnet-3-cidr" {
-  default         = "10.0.0.0/16"
-  description     = "My dev VPC Subnet Private 3 CIDR"
+variable "remote_state_key" {
+  description = "Key name for infrastruture layer"
 }
