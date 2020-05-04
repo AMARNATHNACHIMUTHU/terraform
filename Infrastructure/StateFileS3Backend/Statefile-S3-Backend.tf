@@ -8,5 +8,6 @@ terraform {
     bucket = "viv-terraform-remote-state"
     key    = "StatefileS3/terraform.tfstate"
     region = "eu-west-1"
+    dynamodb_table = "terraform-state-lock"
   }
 }
