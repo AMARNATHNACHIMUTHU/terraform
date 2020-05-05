@@ -1,12 +1,3 @@
-terraform {
-  backend "s3" {
-    bucket = "viv-terraform-remote-state"
-    key    = "infrastruture/terraform.tfstate"
-    region = "eu-west-1"
-  }
-}
-
-
 variable "region" {
   default         = "eu-west-1"
   description     = "This is the default region for all my infrastructure."

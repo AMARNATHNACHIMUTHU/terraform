@@ -1,7 +1,7 @@
 resource "aws_security_group" "ec2_public_security_group" {
   name = "EC2-Public-SG"
   description = "Internet public facing access for EC2 Instances"
-  vpc_id = "${data.terraform_remote_state.network_configuration.vpc_id}"
+  vpc_id = "vpc-0b4ce8e0c23a72e40"
 
   ingress {
     from_port = 80

@@ -9,7 +9,7 @@ Command are:
 
 ```terraform plan```
 
-```terraform apply```
+```terraform apply -auto-approve```
 
 2. Navigate to StateFileS3Backend to create your Backend to store the state.
 
@@ -17,7 +17,7 @@ Command are:
 
 ```terraform plan```
 
-```terraform apply```
+```terraform apply -auto-approve```
 
 3. Navigate back to Infrastructure to build.
 
@@ -27,7 +27,7 @@ Command are:
 
 ```terraform plan -var-file="dev.tfvars" ```
 
-```terraform apply -var-file="dev.tfvars" ```
+```terraform apply -var-file="dev.tfvars" -auto-approve```
 
 ```terraform destroy```
 

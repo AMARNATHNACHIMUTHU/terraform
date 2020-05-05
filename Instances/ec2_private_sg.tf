@@ -1,13 +1,13 @@
 resource "aws_security_group" "ec2_private_security_group" {
   name = "EC2-Private-SG"
   description = "Only allow public security groups to access these instances"
-  vpc_id = "${data.terraform_remote_state.network_configuration.vpc_id}"
+  vpc_id = "vpc-0b4ce8e0c23a72e40"
 
   ingress {
     from_port = 0
     protocol = "-1"
     to_port = 0
-    cidr_blocks = "${aws_security_group.ec2_public_security_group.id}"
+    security_groups = ["${aws_security_group.ec2_public_security_group.id}"]
   }
 
   ingress {

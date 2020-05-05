@@ -1,9 +1,5 @@
 terraform {
-  backend "s3" {
-    bucket = "viv-terraform-remote-state"
-    key    = "instances/terraform.tfstate"
-    region = "${var.region}"
-  }
+  backend "s3" {}
 }
 
 data "terraform_remote_state" "network_configuration" {
